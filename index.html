@@ -1,161 +1,186 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      href="public/icon.png"
-    />
-    <title>Maxim Alexei - Resume</title>
-    <meta name="author" content="Maxim Alexei">
-  </head>
 
-  <body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css" />
+  <link rel="icon" type="image/png" href="public/icon.png" />
+  <title>Maxim Alexei - Resume</title>
+  <meta name="author" content="Maxim Alexei">
+</head>
 
-    <header>
-      <h1>Maxim Alexei - Resume</h1>
-      <nav>
+<body>
+
+  <header>
+    <h1>Maxim Alexei - Resume</h1>
+    <nav>
+      <ul>
+        <li><a href="https://github.com/MaxNoragami">🐙 GitHub</a></li>
+        <li><a href="mailto:ping@maxim.contact">📧 Email</a></li>
+        <li>
+          <a href="https://www.linkedin.com/in/maxim-alexei-5a161030a/">💼 LinkedIn</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!--About me-->
+    <article>
+      <h2>About me</h2>
+      <p>
+        👋 I am yet another FAF student who enjoys being part of this world
+        where the technology keeps flourishing by each day. Also, I am into
+        OOP, FOSS, Linux, Web Development, and I really enjoy watching/reading
+        about tech/coding related content, while sipping from my cup of warm
+        seaberry tea. As importantly, I aspire to work as a chill
+        back-end/full-stack engineer, while tinkering with my personal
+        homelab, as a hobby.
+      </p>
+    </article>
+
+    <article>
+      <h2>Education</h2>
+      <section>
+        <h4><mark>01/09/2023 - CURRENT</mark></h4>
         <ul>
-          <li><a href="https://github.com/MaxNoragami">GitHub</a></li>
-          <li><a href="mailto:maxim.alexei@isa.utm.md">Email</a></li>
           <li>
-            <a href="https://www.linkedin.com/in/maxim-alexei-5a161030a/"
-              >LinkedIn</a
-            >
+            <em>📜 Bachelor of Science English - Taught Honours Programme in
+              Software Engineering</em>
+          </li>
+          <li>
+            🏫 Technical University of Moldova, Faculty of Computers,
+            Informatics and Microelectronics
+          </li>
+          <li>📍 Chisinau, Moldova</li>
+        </ul>
+        <blockquote>
+          <em>💡 My favorite course's been the OOP one, as the labs were
+            enjoyable, and the fact that the teacher played Kalimba at the
+            last lesson was truly fun & memorable.</em>
+        </blockquote>
+      </section>
+      <section>
+        <h4><strong>01/09/2020 - 31/05/2023</strong></h4>
+        <ul>
+          <li>
+            <em>📜 Baccalaureate Diploma</em>
+          </li>
+          <li>🏫 Public Institution Theoretical Lyceum "Gaudeamus"</li>
+          <li>📍 Chisinau, Moldova</li>
+        </ul>
+        <blockquote>
+          <em>💡 I really enjoyed Geography, as a fun memory I have about it is
+            that we've had this interdisciplinary task where we'd built a
+            <a href="https://maxnoragami.github.io/japonia/">website</a>, as a
+            visiting card, for a country, Japan in my case.</em>
+        </blockquote>
+      </section>
+    </article>
+
+    <article>
+      <h2>Projects</h2>
+      <section>
+        <h4>
+          🌍 CŌNTRY.APP | Wordle-like Country Guessing Game
+        </h4>
+        <p><mark>May 2026</mark> - <em>Full-Stack SPA Integration and State Management</em></p>
+        <ul>
+          <li>Developed a full-stack, browser-based geographic guessing game utilizing a <strong>Svelte 5</strong> SPA
+            and an <strong>ASP.NET Core</strong> backend.</li>
+          <li>Built a local-first frontend architecture, leveraging <strong>IndexedDB</strong> for game state
+            persistence and utilizing custom Svelte components to interact with D3 map visualizations.</li>
+          <li>Secured backend with <strong>role-based access</strong> control, managing authenticated sessions via
+            secure access/refresh cookies and <strong>XSRF</strong> token validation.</li>
+          <li>Configured <strong>Docker Compose</strong> for seamless local development, and generated interactive
+            Swagger <strong>API documentation</strong> for endpoint testing.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>
+          💻 GO2WEB | CLI Tool for Web Browsing
+        </h4>
+        <p><mark>Apr 2026</mark> - <em>Low-Level Networking and CLI Tooling</em></p>
+        <ul>
+          <li>Built a fully functional command-line web browser in <strong>C#</strong> to interface with web servers
+            entirely from scratch.</li>
+          <li>Implemented custom HTTP/1.1 and <strong>HTTPS</strong> communication directly over raw <strong>TCP
+              sockets</strong>, completely bypassing standard high-level HTTP client libraries.</li>
+          <li>Engineered a robust request handler capable of automatic redirect resolution, content negotiation, and
+            local response <strong>caching</strong> via ETag validation.</li>
+          <li>Parsed raw HTML payloads and rendered clean, formatted output (tables, lists, text) directly into the
+            terminal interface.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h4>
+          🍓 DULCETI.ME | Statically Generated Landing Page
+        </h4>
+        <p><mark>Mar 2026</mark> - <em>Frontend Fundamentals, SSG, and Headless CMS</em></p>
+        <ul>
+          <li>Created a highly performant, statically generated landing page using <strong>Astro</strong>, structuring
+            semantic HTML and styling the interface with <strong>Tailwind CSS</strong>.</li>
+          <li>Configured and deployed <strong>Sveltia CMS</strong> as a headless backend, enabling non-technical users
+            to securely manage media assets and edit site content directly via GitHub commits.</li>
+          <li>Implemented full <strong>internationalization</strong> (i18n) architecture, allowing visitors to instantly
+            toggle content language based on their preference.</li>
+          <li>Managed <strong>version control</strong> and automated the build and deployment pipeline using
+            <strong>GitHub Pages</strong> and <strong>GitHub Actions</strong>.
           </li>
         </ul>
-      </nav>
-    </header>
+      </section>
 
-    <main>
-      <!--About me-->
-      <article>
-        <h2>About me</h2>
-        <p>
-          👋 I am yet another FAF student who enjoys being part of this world
-          where the technology keeps flourishing by each day. Also, I am into
-          OOP, FOSS, Linux, Web Development, and I really enjoy watching/reading
-          about tech/coding related content, while sipping from my cup of warm
-          seaberry tea. As importantly, I aspire to work as a chill
-          back-end/full-stack engineer, while tinkering with my personal
-          homelab, as a hobby.
-        </p>
-      </article>
+      <section>
+        <h4>
+          📚 BORROWBOOK.ME | Physical Book Borrowing & Tracking App
+        </h4>
+        <p><mark>Nov 2025</mark> - <em>Backend Architecture, Security, Cloud Infrastructure</em></p>
+        <ul>
+          <li>Engineered a secure <strong>REST API</strong> using <strong>Spring Boot 3</strong>, relying on
+            <strong>PostgreSQL</strong> for persistent data and a dual <strong>Redis</strong> setup for high-speed
+            caching and refresh token management.
+          </li>
+          <li>Implemented strict security controls, including cookie-based <strong>JWT</strong> authentication, custom
+            request <strong>rate-limiting</strong>, and XSRF protection, achieving an A+ rating on securityheaders.com.
+          </li>
+          <li>Audited application security and tested for vulnerabilities using <strong>OWASP ZAP</strong>.</li>
+          <li>Designed a distributed deployment architecture, orchestrating the backend across <strong>Render</strong>,
+            <strong>Redis Cloud</strong>, and <strong>Aiven Cloud</strong> infrastructure.
+          </li>
+        </ul>
+      </section>
+    </article>
 
-      <article>
-        <h2>Education</h2>
-        <section>
-          <h4><mark>01/09/2023 - CURRENT</mark></h4>
-          <ul>
-            <li>
-              <em
-                >📜 Bachelor of Science English - Taught Honours Programme in
-                Software Engineering</em
-              >
-            </li>
-            <li>
-              🏫 Technical University of Moldova, Faculty of Computers,
-              Informatics and Microelectronics
-            </li>
-            <li>📍 Chisinau, Moldova</li>
-          </ul>
-          <blockquote>
-            <em
-              >💡 My favorite course's been the OOP one, as the labs were
-              enjoyable, and the fact that the teacher played Kalimba at the
-              last lesson was truly fun & memorable.</em
-            >
-          </blockquote>
-        </section>
-        <section>
-          <h4><strong>01/09/2020 - 31/05/2023</strong></h4>
-          <ul>
-            <li>
-              <em>📜 Baccalaureate Diploma</em>
-            </li>
-            <li>🏫 Public Institution Theoretical Lyceum "Gaudeamus"</li>
-            <li>📍 Chisinau, Moldova</li>
-          </ul>
-          <blockquote>
-            <em
-              >💡 I really enjoyed Geography, as a fun memory I have about it is
-              that we've had this interdisciplinary task where we'd built a
-              <a href="https://maxnoragami.github.io/japonia/">website</a>, as a
-              visiting card, for a country, Japan in my case.</em
-            >
-          </blockquote>
-        </section>
-      </article>
+    <article>
+      <h2>AI Tools & Workflow</h2>
+      <ul>
+        <li>🛠️ <strong>Tooling:</strong> Codex, GPT, and Vertex (via Opencode Web) to speed up development while
+          ensuring up-to-date best practices for modern libraries and tools, like Svelte Runes and Tailwind 4, via
+          skills and MCPs.</li>
+        <li>⚙️ <strong>Process:</strong> Treat AI as an execution engine. I establish the technical context, define the
+          specs, and brainstorm the architecture in plan mode before prompting the model to write any code.</li>
+        <li>🤝 <strong>Delegation:</strong> Offload repetitive tasks, like writing tests, READMEs, PR descriptions, and
+          organizing files, to AI, keeping my focus on high-level system design and security.</li>
+      </ul>
+    </article>
 
-      <article>
-        <h2>Projects</h2>
-        <section>
-          <h4>
-            📚 BorrowBook -
-            <a href="https://borrowbook.me/">https://borrowbook.me/</a>
-          </h4>
-          <ul>
-            <li><em>An app for a physical book sharing/borrowing.</em></li>
-            <li>
-              Tech Stack:
-              <ul>
-                <li>Backend: <em>Java, Spring Boot</em></li>
-                <li>Frontend: <em>Javascript, Tailwind</em></li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h4>
-            ✂️ Rock-Papers-Scissors -
-            <a href="https://rps.maxim.contact/">https://rps.maxim.contact/</a>
-          </h4>
-          <ul>
-            <li>
-              <em
-                >A chill game, with a self-explanatory title, made to try out
-                JS.</em
-              >
-            </li>
-            <li>
-              Tech Stack:
-              <ul>
-                <li><em>HTML</em></li>
-                <li><em>CSS</em></li>
-                <li><em>Javascript</em></li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-        <section>
-          <h4>
-            👾 Another Typical War Simulator -
-            <a href="https://maxnoragami.itch.io/another-typical-war-simulator"
-              >https://itch.io/atws</a
-            >
-          </h4>
-          <ul>
-            <li>
-              <em>My own take on Conway's Game of Life game.</em>
-            </li>
-            <li>
-              Tech Stack:
-              <ul>
-                <li><em>Godot</em></li>
-                <li><em>Aseprite</em></li>
-                <li><em>Copilot</em></li>
-              </ul>
-            </li>
-          </ul>
-        </section>
-      </article>
-    </main>
-    
-  </body>
+    <article>
+      <h2>Additional</h2>
+      <ul>
+        <li>💻 <strong>Technical Skills:</strong> C#, EF Core, ASP.NET Core, SQL, HTML/CSS, ORM usage, TS, Svelte,
+          SveltiaCMS, Docker, Git, Astro</li>
+        <li>🗣️ <strong>Languages:</strong> Native in Romanian, Fluent in English, Conversational Russian Basics</li>
+        <li>📜 <strong>Certifications & Trainings:</strong> Amdaris Fullstack Internship, Foundational C# with
+          Microsoft, Cambridge FCE English C1</li>
+        <li>🏆 <strong>Awards:</strong> #1 @ "Summer FAF x SIGMOID Hack 2025", #2 @ "AI Media Hack 2025", #2 @ "Summer
+          FAF x SIGMOID Hack 2024"</li>
+      </ul>
+    </article>
+  </main>
+
+</body>
+
 </html>
